@@ -20,7 +20,7 @@ $(document).ready(function() {
   console.log("llegando al JS");
         $.ajax({
               dataType: 'json',
-              url: "http://127.0.0.1:5984/demo001/_design/segundo/_view/vista002?include_docs=true"
+              url: "http://127.0.0.1:5984/demo-001/_design/personas/_view/vista02?include_docs=true"
               }).then(function(data) {
                 console.log(data);
                 for(var i=0; i<data.rows.length; i++){
